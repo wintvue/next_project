@@ -6,20 +6,19 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm <span className="text-dark-accent">Your Name</span>
+            Hello, I'm <span className="text-dark-accent">Joseph</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-dark-muted mb-6">
-            Full Stack Developer
-          </h2>
           <p className="text-lg mb-8 text-dark-text/80">
-            I create beautiful and functional web applications with modern technologies.
+            I'm a self-taught programmer and content creator with special interests in backend and AI programming.
+            I like to build fast and scalable systems.
+            Here is a summary of my expertise and experience.
           </p>
           <div className="space-x-4">
             <a
-              href="#contact"
+              href="#about"
               className="bg-dark-accent text-dark-primary px-6 py-3 rounded-lg font-medium hover:bg-dark-accent/90 transition-colors"
             >
-              Contact Me
+              See More
             </a>
             <a
               href="#projects"
