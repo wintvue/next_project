@@ -9,7 +9,7 @@ const projects = [
     image: "",
     technologies: ["React", "Firebase"],
     demoLink: "https://tinyurl.com/45zb9n9p",
-    codeLink: "https://github.com/wintvue/React-Commerce"
+    codeLink: "https://github.com/wintvue/GeneralStore"
   },
   {
     id: 2,
