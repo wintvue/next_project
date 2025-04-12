@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { Link as ScrollLink } from 'react-scroll'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,14 +16,15 @@ export default function Navbar() {
               Joseph
             </Link>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <NavLink href="#about">About</NavLink>
-              <NavLink href="#projects">Projects</NavLink>
-              <NavLink href="#skills">Skills</NavLink>
-              <NavLink href="#contact">Contact</NavLink>
+            <div className="ml-10 flex items-baseline space-x-6">
+              <ScrollLink to="hero" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Home</ScrollLink>
+              <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">About</ScrollLink>
+              <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Projects</ScrollLink>
+              <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Skills</ScrollLink>
+              <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Contact</ScrollLink>
             </div>
           </div>
 

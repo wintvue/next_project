@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section id="about" className="py-20">
-      <div className="animate-fade-in">
+    <section id="about" className="py-20 w-full bg-dark-secondary bg-[url('https://static.wixstatic.com/media/c837a6_eb322a4179e54d788eef6896e67f05d0~mv2.jpg/v1/fill/w_2352,h_1600,al_t,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_eb322a4179e54d788eef6896e67f05d0~mv2.jpg')] bg-center">
+      <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-8 text-center">
           About <span className="text-dark-accent">Me</span>
         </h2>

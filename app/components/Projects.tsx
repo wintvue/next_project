@@ -33,8 +33,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20">
-      <div className="animate-fade-in">
+    <section id="projects" className="py-20 w-full bg-dark-primary bg-[url('https://static.wixstatic.com/media/c837a6_2119733e838e4a2f8813ebde736f99d5~mv2.jpg/v1/fill/w_1960,h_1600,al_r,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2119733e838e4a2f8813ebde736f99d5~mv2.jpg')] bg-center">
+      <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-12 text-center">
           My <span className="text-dark-accent">Projects</span>
         </h2>
