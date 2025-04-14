@@ -1,7 +1,10 @@
 import './ui/global.css'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ 
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'] 
+})
 
 export const metadata = {
   title: 'Your Name - Portfolio',
@@ -15,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-dark-primary text-dark-text`}>
+      <body className={`${poppins.className} bg-dark-primary text-dark-text`}>
         {children}
       </body>
     </html>
