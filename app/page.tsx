@@ -7,10 +7,8 @@ import Navbar from './components/Navbar'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="pb-16">
-        <Navbar />
-      </div>
+    <main className="min-h-screen relative">
+      <Navbar />
       <div className="space-y-0">
           <Hero />
           <About />

@@ -6,8 +6,8 @@ const projects = [
     id: 1,
     title: "General Store",
     description: "An e-commerce solution with payment integration and user authentication.",
-    image: "",
-    technologies: ["React", "Firebase"],
+    image: "/us_flag.png",
+    technologies: ["React", "Firebase", "Paypal API"],
     demoLink: "https://tinyurl.com/45zb9n9p",
     codeLink: "https://github.com/wintvue/GeneralStore"
   },
@@ -15,8 +15,8 @@ const projects = [
     id: 2,
     title: "Pong",
     description: "Multiplayer games similar to ping pong played by 2 players.",
-    image: "",
-    technologies: ["Node.js", "Firebase", "Tailwind CSS"],
+    image: "/us_flag.png",
+    technologies: ["Node.js", "Socket"],
     demoLink: "https://client-hazel-one.vercel.app",
     codeLink: "https://github.com/wintvue/Socket_Pong"
   },
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     title: "Portfolio Website",
     description: "A modern, responsive portfolio website built with Next.js and Tailwind CSS.",
-    image: "",
+    image: "/us_flag.png",
     technologies: ["Next.js", "Tailwind CSS"],
     demoLink: "",
     codeLink: ""
@@ -33,31 +33,31 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 w-full bg-dark-primary bg-[url('https://static.wixstatic.com/media/c837a6_2119733e838e4a2f8813ebde736f99d5~mv2.jpg/v1/fill/w_1960,h_1600,al_r,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2119733e838e4a2f8813ebde736f99d5~mv2.jpg')] bg-center">
+    <section id="projects" className="py-20 w-full bg-dark-primary bg-[url('/about_desk.png')] bg-center bg-no-repeat bg-fixed">
       <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-12 text-center">
-          My <span className="text-dark-accent">Projects</span>
+        <h2 className="text-5xl font-bold mb-12 text-center">
+          My <span>Projects</span>
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="bg-dark-secondary rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
-                {/* <Image 
+                <Image 
                   src={project.image} 
                   alt={project.title}
                   fill
                   className="object-cover"
-                /> */}
+                />
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-dark-accent">{project.title}</h3>
+                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-dark-text/80 mb-4">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech) => (
-                    <span key={tech} className="bg-dark-primary px-3 py-1 rounded-full text-xs font-medium">
+                    <span key={tech} className="pr-3 py-1 text-xs font-medium">
                       {tech}
                     </span>
                   ))}
@@ -66,13 +66,13 @@ export default function Projects() {
                 <div className="flex gap-4">
                   <a 
                     href={project.demoLink} 
-                    className="bg-dark-accent text-dark-primary px-4 py-2 rounded font-medium text-sm hover:bg-dark-accent/90 transition-colors"
+                    className="bg-dark-accent px-4 py-2 rounded font-medium text-sm hover:bg-dark-accent/90 transition-colors"
                   >
                     Live Demo
                   </a>
                   <a 
                     href={project.codeLink} 
-                    className="border border-dark-accent text-dark-accent px-4 py-2 rounded font-medium text-sm hover:bg-dark-accent/10 transition-colors"
+                    className="border border-dark-accent px-4 py-2 rounded font-medium text-sm hover:bg-dark-accent/10 transition-colors"
                   >
                     View Code
                   </a>

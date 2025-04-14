@@ -6,12 +6,15 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
+    },
     extend: {
       colors: {
         dark: {
-          primary: '#0F172A',    // Dark blue background
-          secondary: '#1E293B',  // Slightly lighter blue for cards
-          accent: '#38BDF8',     // Bright blue accent
+          primary: '#010208',    // Dark blue background
+          secondary: '#1e1f21',  // Slightly lighter blue for cards
+          accent: '#7B60FF',     // Purple accent
           text: '#E2E8F0',      // Light gray text
           muted: '#64748B',     // Muted text
         }
