@@ -39,6 +39,7 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-6">
               <ScrollLink to="hero" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Home</ScrollLink>
               <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">About</ScrollLink>
+              <ScrollLink to="experience" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Experience</ScrollLink>
               <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Projects</ScrollLink>
               <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Skills</ScrollLink>
               <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800} className="cursor-pointer px-3 py-2 hover:text-dark-accent transition-colors text-sm font-bold">Contact</ScrollLink>
@@ -71,6 +72,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <div className={`px-2 pt-2 pb-3 space-y-1 sm:px-3 ${scrolled ? 'bg-black' : 'bg-dark-secondary/90'}`}>
             <MobileNavLink href="#about">About</MobileNavLink>
+            <MobileNavLink href="#experience">Experience</MobileNavLink>
             <MobileNavLink href="#projects">Projects</MobileNavLink>
             <MobileNavLink href="#skills">Skills</MobileNavLink>
             <MobileNavLink href="#contact">Contact</MobileNavLink>

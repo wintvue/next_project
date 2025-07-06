@@ -12,8 +12,8 @@ export default function Home() {
       <Navbar />
       <div className="space-y-0">
           <Hero />
-          <Experience />
           <About />
+          <Experience />
           <Projects />
           <Skills />
           <Contact />
