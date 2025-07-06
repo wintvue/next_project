@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 w-full bg-dark-primary min-h-screen bg-center bg-no-repeat bg-fixed bg-[url('/about_desk.png')]">
+    <section id="about" className="py-20 w-full bg-dark-primary bg-center bg-no-repeat bg-fixed bg-[url('/about_desk.png')]">
       <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-bold mb-8 text-center">
           About <span>Me</span>
@@ -8,7 +8,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
           <div className="mt-12">
-            <p className="mb-4 text-2xl leading-relaxed">
+            <p className="text-2xl leading-relaxed">
               I'm a developer with experience in the finance sector.
               I'm willing to learn new things and create efficient and highly scalable solutions.
               I'm excited to collaborate with others to solve real world problems.
