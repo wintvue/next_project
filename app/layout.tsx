@@ -7,8 +7,12 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'Portfolio',
+  title: 'Joseph',
   description: 'Personal portfolio showcasing my work and skills',
+  icons: {
+    icon: '/j_icon.ico',     // or '/custom-icon.png'
+    shortcut: '/j_icon.ico',
+  },
 }
 
 export const viewport = {
