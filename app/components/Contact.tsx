@@ -23,16 +23,16 @@ export default function Contact() {
   }
   
   return (
-    <section id="contact" className="py-20 w-full bg-dark-primary bg-[url('/skills.png')] bg-center bg-no-repeat bg-fixed">
+    <section id="contact" className="py-12 md:py-20 w-full bg-dark-primary bg-[url('/skills.png')] bg-center bg-no-repeat bg-fixed">
       <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-5xl font-bold mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-center">
           Contact <span>Me</span>
         </h2>
         
         <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
-            <p className="text-dark-text/80 mb-6">
+            <h3 className="text-lg md:text-xl font-semibold mb-4">Get In Touch</h3>
+            <p className="text-sm md:text-base text-dark-text/80 mb-6">
               I'm available for work and job opportunities. 
               Feel free to reach out if you want to collaborate or just want to connect!
             </p>

@@ -71,11 +71,12 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div className={`px-2 pt-2 pb-3 space-y-1 sm:px-3 ${scrolled ? 'bg-black' : 'bg-dark-secondary/90'}`}>
-            <MobileNavLink href="#about">About</MobileNavLink>
-            <MobileNavLink href="#experience">Experience</MobileNavLink>
-            <MobileNavLink href="#projects">Projects</MobileNavLink>
-            <MobileNavLink href="#skills">Skills</MobileNavLink>
-            <MobileNavLink href="#contact">Contact</MobileNavLink>
+            <MobileNavLink to="hero" onClick={() => setIsOpen(false)}>Home</MobileNavLink>
+            <MobileNavLink to="about" onClick={() => setIsOpen(false)}>About</MobileNavLink>
+            <MobileNavLink to="experience" onClick={() => setIsOpen(false)}>Experience</MobileNavLink>
+            <MobileNavLink to="projects" onClick={() => setIsOpen(false)}>Projects</MobileNavLink>
+            <MobileNavLink to="skills" onClick={() => setIsOpen(false)}>Skills</MobileNavLink>
+            <MobileNavLink to="contact" onClick={() => setIsOpen(false)}>Contact</MobileNavLink>
           </div>
         </div>
       )}
@@ -94,13 +95,18 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
   )
 }
 
-function MobileNavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function MobileNavLink({ to, children, onClick }: { to: string; children: React.ReactNode; onClick: () => void }) {
   return (
-    <Link
-      href={href}
-      className="text-dark-text hover:text-dark-accent block px-3 py-2 rounded-md text-base font-medium"
+    <ScrollLink
+      to={to}
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={800}
+      onClick={onClick}
+      className="text-dark-text hover:text-dark-accent block px-3 py-2 rounded-md text-base font-medium cursor-pointer"
     >
       {children}
-    </Link>
+    </ScrollLink>
   )
-} 
+}
