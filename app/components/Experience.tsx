@@ -43,12 +43,12 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" className="py-20 w-full bg-dark-secondary bg-[url('/about_desk.png')] bg-center bg-no-repeat bg-fixed">
+    <section id="experience" className="py-12 md:py-20 w-full bg-dark-secondary bg-[url('/about_desk.png')] bg-center bg-no-repeat bg-fixed">
       <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-5xl font-bold mb-12 text-center">Experience</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-center">Experience</h2>
         <div className="relative flex flex-col items-center">
           {/* Vertical timeline line */}
-          <div className="absolute left-1/2 top-0 w-1 h-full bg-dark-muted/30 -translate-x-1/2 z-0" />
+          <div className="absolute left-1/2 top-0 w-1 h-full bg-dark-muted/30 -translate-x-1/2 z-0 hidden md:block" />
           <div className="space-y-16 w-full">
             {experiences.map((exp, idx) => (
               <div
@@ -58,25 +58,25 @@ export default function Experience() {
                 {/* Card left */}
                 {((idx % 2 === 0) || isMobile) && (
                   <div className="md:w-1/2 flex justify-end md:pr-8 mb-4 md:mb-0">
-                    <div className="bg-dark-primary rounded-xl shadow-lg p-6 w-full max-w-md">
-                      <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>
-                      <p className="text-dark-text/80 mb-2">{exp.description}</p>
+                    <div className="bg-dark-primary rounded-xl shadow-lg p-4 md:p-6 w-full max-w-md">
+                      <h3 className="text-xl md:text-2xl font-bold mb-2">{exp.title}</h3>
+                      <p className="text-sm md:text-base text-dark-text/80 mb-2">{exp.description}</p>
                     </div>
                   </div>
                 )}
                 {/* Timeline icon and date */}
-                <div className="z-10 flex flex-col items-center">
-                  <div className="bg-white border-4 border-dark-secondary rounded-full p-3 mb-2 shadow-lg">
+                <div className="z-10 flex flex-col items-center mb-4 md:mb-0">
+                  <div className="bg-white border-4 border-dark-secondary rounded-full p-2 md:p-3 mb-2 shadow-lg">
                     {exp.icon}
                   </div>
-                  <span className="text-white font-medium text-lg whitespace-nowrap px-4">{exp.date}</span>
+                  <span className="text-white font-medium text-sm md:text-lg whitespace-nowrap px-2 md:px-4">{exp.date}</span>
                 </div>
                 {/* Card right */}
                 {(idx % 2 !== 0 && !isMobile) && (
                   <div className="md:w-1/2 flex justify-start md:pl-8">
-                    <div className="bg-dark-primary rounded-xl shadow-lg p-6 w-full max-w-md">
-                      <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>
-                      <p className="text-dark-text/80 mb-2">{exp.description}</p>
+                    <div className="bg-dark-primary rounded-xl shadow-lg p-4 md:p-6 w-full max-w-md">
+                      <h3 className="text-xl md:text-2xl font-bold mb-2">{exp.title}</h3>
+                      <p className="text-sm md:text-base text-dark-text/80 mb-2">{exp.description}</p>
                     </div>
                   </div>
                 )}

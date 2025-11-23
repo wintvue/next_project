@@ -5,18 +5,20 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import Experience from './components/Experience'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative">
+    <main className="min-h-screen relative overflow-x-hidden">
       <Navbar />
-      <div className="space-y-0">
+      <div className="space-y-0 w-full">
           <Hero />
           <About />
           <Experience />
           <Projects />
           <Skills />
           <Contact />
+          <Footer />
       </div>
     </main>
   )

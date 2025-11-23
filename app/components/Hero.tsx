@@ -4,18 +4,16 @@ import { Link as ScrollLink } from 'react-scroll'
 
 export default function Hero() {
   return (
-    <section id="hero" className="pt-48 pb-32 min-h-screen w-full bg-dark-primary bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat bg-fixed">
-      <div className="animate-fade-in max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 pt-2 pl-16 md:pl-32 lg:pl-40">
-        <h1 className="text-5xl md:text-7xl font-bold mb-1 whitespace-nowrap">
+    <section id="hero" className="pt-32 md:pt-48 pb-20 md:pb-32 min-h-screen w-full bg-dark-primary bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+      <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 pt-2 md:pl-16 lg:pl-32 xl:pl-40">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-1">
           Hello, I'm <span className="text-dark-accent">Joseph</span>
         </h1>
-        <p className="text-3xl mb-10 font-bold py-6 leading-relaxed">
-          I'm a self-taught programmer and content creator with<br></br>
-          special interests in backend and AI programming. I like <br></br>
-          to build fast and scalable systems. Here is a summary<br></br>
-          of my expertise and experience.<br></br>
+        <p className="text-base sm:text-lg md:text-2xl lg:text-3xl mb-6 md:mb-10 font-bold py-4 md:py-6 leading-relaxed max-w-3xl">
+          I'm a self-taught programmer and content creator with special interests in backend and AI programming.
+          I like to build fast and scalable systems. Here is a summary of my expertise and experience.
         </p>
-        <div className="space-x-4 pt-16">
+        <div className="space-x-4 pt-8 md:pt-16">
           <ScrollLink
             to="about"
             spy={true}
@@ -30,4 +28,4 @@ export default function Hero() {
       </div>
     </section>
   )
-} 
+}

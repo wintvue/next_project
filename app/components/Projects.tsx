@@ -33,13 +33,13 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 w-full min-h-[60vh] flex items-center justify-center bg-dark-primary bg-[url('/about_desk.png')] bg-center bg-no-repeat bg-fixed">
+    <section id="projects" className="py-12 md:py-20 w-full min-h-[60vh] flex items-center justify-center bg-dark-primary bg-[url('/about_desk.png')] bg-center bg-no-repeat bg-fixed">
       <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center justify-center">
-        <h2 className="text-5xl font-bold mb-12 text-center">My <span>Projects</span></h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center w-full max-w-5xl">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-center">My <span>Projects</span></h2>
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 justify-center items-center w-full max-w-5xl">
           {projects.map((project) => (
-            <div key={project.id} className="bg-dark-secondary rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs mx-auto h-96 flex flex-col">
-              <div className="relative h-48">
+            <div key={project.id} className="bg-dark-secondary rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow w-full max-w-xs mx-auto min-h-[24rem] flex flex-col">
+              <div className="relative h-40 md:h-48">
                 <Image 
                   src={project.image} 
                   alt={project.title}
@@ -47,9 +47,9 @@ export default function Projects() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-4 flex-1 flex flex-col">
-                <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-                <p className="text-dark-text/80 mb-3 text-sm flex-1">{project.description}</p>
+              <div className="p-3 md:p-4 flex-1 flex flex-col">
+                <h3 className="text-base md:text-lg font-semibold mb-2">{project.title}</h3>
+                <p className="text-dark-text/80 mb-3 text-xs md:text-sm flex-1">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span key={tech} className="pr-3 py-1 text-xs font-medium">
