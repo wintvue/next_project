@@ -1,5 +1,5 @@
-import './ui/global.css'
 import { Poppins } from 'next/font/google'
+import './ui/global.css'
 
 const poppins = Poppins({ 
   weight: ['300', '400', '500', '600', '700'],

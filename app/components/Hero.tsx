@@ -19,7 +19,7 @@ export default function Hero() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={800}
+            duration={0}
             className="bg-dark-accent px-6 py-3 rounded-lg hover:bg-dark-accent/90 transition-colors text-sm cursor-pointer inline-block"
           >
             See More
